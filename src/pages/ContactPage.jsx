@@ -170,22 +170,50 @@ export default function ContactPage() {
 
             {/* Info Cards */}
             <div className="lg:col-span-2 space-y-6 fade-up" style={{ transitionDelay: '120ms' }}>
-              {/* Location */}
-              <div className="border border-border-color rounded-xl p-6">
+              {/* India Office */}
+              <div className="border border-border-color rounded-xl p-6 bg-white">
                 <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center text-primary mb-3">
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                     <path strokeLinecap="round" strokeLinejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                   </svg>
                 </div>
-                <h3 className="font-urbanist font-semibold text-text-primary mb-1">Location</h3>
+                <h3 className="font-urbanist font-semibold text-text-primary mb-1">INDIA</h3>
+                <p className="text-text-secondary text-sm leading-relaxed font-semibold">
+                  CataSoft consultancy Pvt. Ltd.
+                </p>
                 <p className="text-text-secondary text-sm leading-relaxed">
-                  Catasoft Solutions FZCO<br />Dubai, UAE
+                  Office 615, Gera Imperium Alpha,<br />
+                  Kharadi, Pune, INDIA.
+                </p>
+                <p className="mt-2 text-sm text-primary">
+                  Email: <a href="mailto:contactus@catasoft.com" className="hover:underline font-medium">contactus@catasoft.com</a>
+                </p>
+              </div>
+
+              {/* UAE Office */}
+              <div className="border border-border-color rounded-xl p-6 bg-white">
+                <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center text-primary mb-3">
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                  </svg>
+                </div>
+                <h3 className="font-urbanist font-semibold text-text-primary mb-1">UAE</h3>
+                <p className="text-text-secondary text-sm leading-relaxed font-semibold">
+                  CataSoft Solutions FZCO
+                </p>
+                <p className="text-text-secondary text-sm leading-relaxed">
+                  Dubai Silicon Oasis, DDP, Building A2,<br />
+                  Dubai, United Arab Emirates.
+                </p>
+                <p className="mt-2 text-sm text-primary">
+                  Email: <a href="mailto:contactus@catasoft.com" className="hover:underline font-medium">contactus@catasoft.com</a>
                 </p>
               </div>
 
               {/* Connect */}
-              <div className="border border-border-color rounded-xl p-6">
+              <div className="border border-border-color rounded-xl p-6 bg-white">
                 <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center text-primary mb-3">
                   <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
@@ -200,19 +228,6 @@ export default function ContactPage() {
                 >
                   Follow us on LinkedIn →
                 </a>
-              </div>
-
-              {/* Response Time */}
-              <div className="border border-border-color rounded-xl p-6">
-                <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center text-primary mb-3">
-                  <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                </div>
-                <h3 className="font-urbanist font-semibold text-text-primary mb-1">Response Time</h3>
-                <p className="text-text-secondary text-sm leading-relaxed">
-                  We typically respond within 1 business day.
-                </p>
               </div>
             </div>
           </div>
