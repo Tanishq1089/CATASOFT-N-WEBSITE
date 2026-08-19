@@ -21,7 +21,11 @@ html {
 body {
   font-family: 'Inter', sans-serif;
   color: #18181B;
-  background: #FFFFFF;
+  background-color: #FFFFFF;
+  background-image: 
+    linear-gradient(to right, rgba(234, 88, 12, 0.035) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(234, 88, 12, 0.035) 1px, transparent 1px);
+  background-size: 32px 32px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

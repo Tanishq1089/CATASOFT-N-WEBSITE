@@ -124,7 +124,7 @@ export default function HomePage() {
 
 
       {/* ═══════════ SERVICES PREVIEW ═══════════ */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-transparent">
         <div className="max-w-7xl mx-auto px-6">
           <SectionHeading
             badge="Our Services"
@@ -134,7 +134,7 @@ export default function HomePage() {
             {services.map((s, i) => (
               <div
                 key={s.title}
-                className="fade-up group border border-border-color rounded-xl p-8 hover:border-primary transition-all duration-300 hover:-translate-y-0.5"
+                className="fade-up group border border-border-color rounded-xl p-8 hover:border-primary bg-white transition-all duration-300 hover:-translate-y-0.5"
                 style={{ transitionDelay: `${i * 80}ms` }}
               >
                 <div className="w-12 h-12 rounded-xl bg-primary flex items-center justify-center text-white mb-4">
@@ -153,7 +153,7 @@ export default function HomePage() {
       </section>
 
       {/* ═══════════ VISION / MISSION ═══════════ */}
-      <section className="py-20 bg-off-white">
+      <section className="py-20 bg-transparent">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {/* Vision */}
