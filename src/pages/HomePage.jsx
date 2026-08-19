@@ -122,24 +122,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ═══════════ TRUST TICKER ═══════════ */}
-      <section className="bg-white py-5 overflow-hidden relative">
-        <div className="absolute inset-y-0 left-0 w-20 bg-gradient-to-r from-white to-transparent z-10" />
-        <div className="absolute inset-y-0 right-0 w-20 bg-gradient-to-l from-white to-transparent z-10" />
-        <div className="ticker-track flex items-center gap-8 w-max">
-          {[...Array(4)].map((_, rep) =>
-            tickerItems.map((item, i) => (
-              <span
-                key={`${rep}-${i}`}
-                className="flex-shrink-0 inline-flex items-center gap-2 text-text-secondary text-sm font-medium"
-              >
-                <span className="w-1.5 h-1.5 rounded-full bg-primary" />
-                {item}
-              </span>
-            ))
-          )}
-        </div>
-      </section>
 
       {/* ═══════════ SERVICES PREVIEW ═══════════ */}
       <section className="py-20 bg-white">
