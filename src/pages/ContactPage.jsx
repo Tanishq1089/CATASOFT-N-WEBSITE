@@ -51,7 +51,7 @@ export default function ContactPage() {
   return (
     <>
       {/* Hero */}
-      <section className="pt-28 pb-16 bg-white">
+      <section className="pt-28 pb-16 bg-transparent">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <PillBadge className="mb-4">Contact</PillBadge>
           <h1 className="font-urbanist font-bold text-4xl md:text-5xl lg:text-[56px] leading-[1.1] text-text-primary mb-4">
@@ -64,7 +64,7 @@ export default function ContactPage() {
       </section>
 
       {/* Form + Info */}
-      <section className="pb-20 bg-white">
+      <section className="pb-20 bg-transparent">
         <div className="max-w-6xl mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-5 gap-10">
             {/* Form */}

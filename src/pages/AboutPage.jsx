@@ -43,7 +43,7 @@ export default function AboutPage() {
   return (
     <>
       {/* Story */}
-      <section className="pt-32 pb-16 bg-white">
+      <section className="pt-32 pb-16 bg-transparent">
         <div className="max-w-3xl mx-auto px-6 text-center mb-8 fade-up">
           <PillBadge>About Us</PillBadge>
         </div>
@@ -61,7 +61,7 @@ export default function AboutPage() {
       </section>
 
       {/* Vision & Mission */}
-      <section className="py-20 bg-off-white">
+      <section className="py-20 bg-transparent">
         <div className="max-w-5xl mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="fade-up border border-border-color rounded-xl p-8 bg-white">
@@ -92,14 +92,14 @@ export default function AboutPage() {
       </section>
 
       {/* Why Choose Us */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-transparent">
         <div className="max-w-7xl mx-auto px-6">
           <SectionHeading badge="Why Catasoft" title="Why Choose Us" />
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {reasons.map((r, i) => (
               <div
                 key={r.title}
-                className="fade-up border border-border-color rounded-xl p-8 hover:border-primary transition-all duration-300 hover:-translate-y-0.5"
+                className="fade-up border border-border-color rounded-xl p-8 hover:border-primary bg-white transition-all duration-300 hover:-translate-y-0.5"
                 style={{ transitionDelay: `${i * 80}ms` }}
               >
                 <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary mb-4">

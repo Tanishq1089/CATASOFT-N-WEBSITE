@@ -38,7 +38,7 @@ export default function TrainingPage() {
   return (
     <>
       {/* Hero */}
-      <section className="pt-28 pb-16 bg-white">
+      <section className="pt-28 pb-16 bg-transparent">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <PillBadge className="mb-4">Training</PillBadge>
           <h1 className="font-urbanist font-bold text-4xl md:text-5xl lg:text-[56px] leading-[1.1] text-text-primary mb-4">
@@ -51,13 +51,13 @@ export default function TrainingPage() {
       </section>
 
       {/* Training Cards */}
-      <section className="pb-20 bg-white">
+      <section className="pb-20 bg-transparent">
         <div className="max-w-5xl mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {courses.map((c, i) => (
               <div
                 key={c.title}
-                className="fade-up border border-border-color rounded-xl p-8 hover:border-primary transition-all duration-300 hover:-translate-y-0.5"
+                className="fade-up border border-border-color rounded-xl p-8 hover:border-primary bg-white transition-all duration-300 hover:-translate-y-0.5"
                 style={{ transitionDelay: `${i * 80}ms` }}
               >
                 <div className="w-12 h-12 rounded-xl bg-primary flex items-center justify-center text-white mb-4">
@@ -72,7 +72,7 @@ export default function TrainingPage() {
       </section>
 
       {/* How It Works */}
-      <section className="py-20 bg-off-white">
+      <section className="py-20 bg-transparent">
         <div className="max-w-5xl mx-auto px-6">
           <SectionHeading badge="Process" title="How It Works" />
           <div className="relative grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -92,7 +92,7 @@ export default function TrainingPage() {
       </section>
 
       {/* CTA Banner */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-transparent">
         <div className="max-w-4xl mx-auto px-6 text-center fade-up">
           <h2 className="font-urbanist font-semibold text-3xl md:text-[40px] leading-tight text-text-primary mb-4">
             Interested in training your team?

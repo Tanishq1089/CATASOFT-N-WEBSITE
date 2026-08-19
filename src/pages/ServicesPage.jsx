@@ -66,7 +66,7 @@ export default function ServicesPage() {
   return (
     <>
       {/* Hero */}
-      <section className="pt-28 pb-16 bg-white">
+      <section className="pt-28 pb-16 bg-transparent">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <PillBadge className="mb-4">Our Services</PillBadge>
           <h1 className="font-urbanist font-bold text-4xl md:text-5xl lg:text-[56px] leading-[1.1] text-text-primary mb-4">
@@ -79,7 +79,7 @@ export default function ServicesPage() {
       </section>
 
       {/* Service Rows - 2 Columns Layout */}
-      <section className="pb-20 bg-white">
+      <section className="pb-20 bg-transparent">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
             {services.map((s, i) => (
@@ -104,7 +104,7 @@ export default function ServicesPage() {
       </section>
 
       {/* CTA Banner */}
-      <section className="py-20 bg-off-white">
+      <section className="py-20 bg-transparent">
         <div className="max-w-4xl mx-auto px-6 text-center fade-up">
           <h2 className="font-urbanist font-semibold text-3xl md:text-[40px] leading-tight text-text-primary mb-4">
             Have a project in mind?
