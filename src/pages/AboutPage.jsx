@@ -44,14 +44,17 @@ export default function AboutPage() {
     <>
       {/* Story */}
       <section className="pt-32 pb-16 bg-white">
+        <div className="max-w-3xl mx-auto px-6 text-center mb-8 fade-up">
+          <PillBadge>About Us</PillBadge>
+        </div>
         <div className="max-w-3xl mx-auto px-6 space-y-6 text-text-secondary leading-relaxed text-base md:text-lg">
-          <p className="fade-up">
+          <p className="fade-up" style={{ transitionDelay: '80ms' }}>
             Catasoft Solutions FZCO was registered in Dubai, UAE in January 2019 with a clear mission: to provide world-class industrial engineering software services to the process, power, and marine industries.
           </p>
-          <p className="fade-up" style={{ transitionDelay: '80ms' }}>
+          <p className="fade-up" style={{ transitionDelay: '160ms' }}>
             As AVEVA specialists, we bring deep platform expertise across E3D, SPPID, SPF, AVEVA Engineering, and AVEVA E&I. Our team of experienced engineers delivers comprehensive detail engineering, 3D modeling, and drafting solutions that meet the highest standards of quality and compliance.
           </p>
-          <p className="fade-up" style={{ transitionDelay: '160ms' }}>
+          <p className="fade-up" style={{ transitionDelay: '240ms' }}>
             From concept to commissioning, we partner with EPC contractors and owner-operators to deliver projects that are on time, within budget, and built to last. Our commitment to continuous improvement and technology adoption ensures our clients always have access to the most efficient engineering workflows available.
           </p>
         </div>
