@@ -46,64 +46,102 @@ export default function AboutPage() {
   useScrollReveal()
 
   return (
-    <div className="pt-24 min-h-screen bg-white">
-      {/* Two Column Company Info & Vision/Mission */}
-      <section className="py-12 md:py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-20 items-start">
-            
-            {/* Left Column: Company */}
-            <div className="fade-up">
-              <h2 className="font-urbanist font-bold text-3xl md:text-4xl text-text-primary mb-6">
-                Company
-              </h2>
-              <div className="space-y-6 text-text-secondary leading-relaxed text-[15px] md:text-base">
-                <p>
-                  Catasoft Solutions FZCO is a government registered company in Dubai, UAE founded in Jan 2019 with a goal to provide IT solutions and Engineering services. We are a group of skilled and experienced people having good knowledge and understanding of the industry requirement.
-                </p>
-                <p>
-                  Catasoft offers a wide range of industrial softwar services for process, power, and marine industries. We are expertise in detail engineering, designing, and drafting. Our software skill includes 2D-3D engineering and information amanagement tools such as SPF,AVEVA AIM, SP3, E3D, SPPID, SPI, AVEVA Engineering, AVEVA E&I, MicroStation, AutoCAD etc. We have good experience in 2D drafting and 3D modeling for oil and gas projects. We also provide Administration, Customization and Automation services for the above software.
-                </p>
+    <>
+      {/* Hero */}
+      <section className="pt-28 pb-16 bg-white">
+        <div className="max-w-4xl mx-auto px-6 text-center">
+          <PillBadge className="mb-4">About Us</PillBadge>
+          <h1 className="font-urbanist font-bold text-4xl md:text-5xl lg:text-[56px] leading-[1.1] text-text-primary">
+            Engineering Excellence Since 2019
+          </h1>
+        </div>
+      </section>
+
+      {/* Story */}
+      <section className="pb-16 bg-white">
+        <div className="max-w-3xl mx-auto px-6 space-y-6 text-text-secondary leading-relaxed text-base md:text-lg">
+          <p className="fade-up">
+            Catasoft Solutions FZCO was registered in Dubai, UAE in January 2019 with a clear mission: to provide world-class industrial engineering software services to the process, power, and marine industries.
+          </p>
+          <p className="fade-up" style={{ transitionDelay: '80ms' }}>
+            As AVEVA specialists, we bring deep platform expertise across E3D, SPPID, SPF, AVEVA Engineering, and AVEVA E&I. Our team of experienced engineers delivers comprehensive detail engineering, 3D modeling, and drafting solutions that meet the highest standards of quality and compliance.
+          </p>
+          <p className="fade-up" style={{ transitionDelay: '160ms' }}>
+            From concept to commissioning, we partner with EPC contractors and owner-operators to deliver projects that are on time, within budget, and built to last. Our commitment to continuous improvement and technology adoption ensures our clients always have access to the most efficient engineering workflows available.
+          </p>
+        </div>
+      </section>
+
+      {/* Stats */}
+      <section className="py-16 bg-white">
+        <div className="max-w-5xl mx-auto px-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {stats.map((s, i) => (
+              <div
+                key={s.label}
+                className="fade-up border border-border-color rounded-xl p-8 text-center hover:border-primary transition-all duration-300 hover:-translate-y-0.5"
+                style={{ transitionDelay: `${i * 80}ms` }}
+              >
+                <div className="font-urbanist font-bold text-2xl text-primary mb-2">{s.value}</div>
+                <div className="text-text-secondary text-sm">{s.label}</div>
               </div>
-            </div>
-
-            {/* Right Column: Vision & Mission */}
-            <div className="space-y-8 fade-up" style={{ transitionDelay: '80ms' }}>
-              <div>
-                <h2 className="font-urbanist font-bold text-3xl md:text-4xl text-text-primary mb-4">
-                  Our Vision
-                </h2>
-                <p className="text-text-secondary leading-relaxed text-[15px] md:text-base">
-                  To achieve excellence by delivering world-class industrial software solutions that are on time, within budget, and of the highest quality.
-                </p>
-              </div>
-
-              <hr className="border-t border-zinc-200" />
-
-              <div>
-                <h2 className="font-urbanist font-bold text-3xl md:text-4xl text-text-primary mb-4">
-                  Our mission
-                </h2>
-                <p className="text-text-secondary leading-relaxed text-[15px] md:text-base">
-                  Our mission is to harness the unique talents of individuals to deliver cutting-edge industrial software solutions. We strive to create a collaborative environment where expertise meets innovation, providing user-friendly and efficient solutions tailored to meet the diverse needs.
-                </p>
-              </div>
-            </div>
-
+            ))}
           </div>
         </div>
       </section>
 
-      {/* Workspace Image Section */}
-      <section className="fade-up max-w-7xl mx-auto px-6 pb-20">
-        <div className="w-full h-[300px] md:h-[400px] rounded-2xl overflow-hidden shadow-sm">
-          <img 
-            src="https://images.unsplash.com/photo-1587831990711-23ca6441447b?auto=format&fit=crop&w=1200&q=80" 
-            alt="Engineering Workstation" 
-            className="w-full h-full object-cover grayscale opacity-90 contrast-125"
-          />
+      {/* Vision & Mission */}
+      <section className="py-20 bg-off-white">
+        <div className="max-w-5xl mx-auto px-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="fade-up border border-border-color rounded-xl p-8 bg-white">
+              <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary mb-4">
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                </svg>
+              </div>
+              <h3 className="font-urbanist font-semibold text-xl text-text-primary mb-3">Our Vision</h3>
+              <p className="text-text-secondary leading-relaxed">
+                To be a globally recognized leader in industrial engineering software services, enabling smarter, faster, and safer project delivery for the process, power, and marine industries. We envision a future where engineering design is seamlessly integrated, highly automated, and delivers exceptional value at every stage.
+              </p>
+            </div>
+            <div className="fade-up border border-border-color rounded-xl p-8 bg-white" style={{ transitionDelay: '80ms' }}>
+              <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary mb-4">
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                </svg>
+              </div>
+              <h3 className="font-urbanist font-semibold text-xl text-text-primary mb-3">Our Mission</h3>
+              <p className="text-text-secondary leading-relaxed">
+                To provide cost-effective, high-quality engineering design and drafting solutions by leveraging cutting-edge AVEVA platforms and deep domain expertise. We are committed to ensuring every project meets the highest standards of precision, compliance, and safety — while empowering our clients to achieve more with less.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
-    </div>
+
+      {/* Why Choose Us */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-6">
+          <SectionHeading badge="Why Catasoft" title="Why Choose Us" />
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {reasons.map((r, i) => (
+              <div
+                key={r.title}
+                className="fade-up border border-border-color rounded-xl p-8 hover:border-primary transition-all duration-300 hover:-translate-y-0.5"
+                style={{ transitionDelay: `${i * 80}ms` }}
+              >
+                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary mb-4">
+                  {r.icon}
+                </div>
+                <h3 className="font-urbanist font-semibold text-lg text-text-primary mb-2">{r.title}</h3>
+                <p className="text-text-secondary text-sm leading-relaxed">{r.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+    </>
   )
 }

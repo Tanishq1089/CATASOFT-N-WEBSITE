@@ -32,7 +32,7 @@ export default function Navbar() {
       <nav className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
         {/* Logo */}
         <Link to="/" className="flex items-center">
-          <img src="/catasoft-logo.png" alt="Catasoft Solutions" className="h-12 md:h-14" />
+          <img src="/catasoft-logo.png" alt="Catasoft Solutions" className="h-16 md:h-20" />
         </Link>
 
         {/* Desktop nav */}

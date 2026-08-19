@@ -79,13 +79,9 @@ export default function HomePage() {
 
   /* render typed heading with color split */
   const renderTypedHeading = () => {
-    const split = 40
-    const white = typed.slice(0, split)
-    const orange = typed.slice(split)
     return (
       <>
-        <span className="text-white">{white}</span>
-        <span className="text-primary">{orange}</span>
+        <span className="text-white">{typed}</span>
         {!typingDone && <span className="typewriter-cursor" />}
       </>
     )
@@ -115,12 +111,6 @@ export default function HomePage() {
             <div className={`flex flex-wrap justify-center gap-4 transition-all duration-700 delay-200 ${
               showSub ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
             }`}>
-              <Link
-                to="/contact"
-                className="rotating-border-btn rotating-border-btn-filled inline-flex items-center px-[26px] py-3 rounded-full bg-primary text-white font-semibold text-sm hover:bg-primary-hover transition-colors"
-              >
-                Get a Quote
-              </Link>
               <Link
                 to="/services"
                 className="rotating-border-btn rotating-border-btn-outline inline-flex items-center px-[26px] py-3 rounded-full text-white font-semibold text-sm hover:text-primary transition-colors"
