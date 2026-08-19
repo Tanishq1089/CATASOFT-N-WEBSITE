@@ -86,7 +86,7 @@ export default function AboutPage() {
               </div>
               <h3 className="font-urbanist font-semibold text-xl text-text-primary mb-3">Our Mission</h3>
               <p className="text-text-secondary leading-relaxed">
-                To provide cost-effective, high-quality engineering design and drafting solutions by leveraging cutting-edge AVEVA platforms and deep domain expertise. We are committed to ensuring every project meets the highest standards of precision, compliance, and safety — while empowering our clients to achieve more with less.
+                To provide cost-effective, high-quality engineering design and drafting solutions by leveraging cutting-edge AVEVA platforms and deep domain expertise. We are committed to ensuring every project meets the highest standards of precision, compliance, and safety while empowering our clients to achieve more with less.
               </p>
             </div>
           </div>
