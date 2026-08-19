@@ -47,18 +47,8 @@ export default function AboutPage() {
 
   return (
     <>
-      {/* Hero */}
-      <section className="pt-28 pb-16 bg-white">
-        <div className="max-w-4xl mx-auto px-6 text-center">
-          <PillBadge className="mb-4">About Us</PillBadge>
-          <h1 className="font-urbanist font-bold text-4xl md:text-5xl lg:text-[56px] leading-[1.1] text-text-primary">
-            Engineering Excellence Since 2019
-          </h1>
-        </div>
-      </section>
-
       {/* Story */}
-      <section className="pb-16 bg-white">
+      <section className="pt-32 pb-16 bg-white">
         <div className="max-w-3xl mx-auto px-6 space-y-6 text-text-secondary leading-relaxed text-base md:text-lg">
           <p className="fade-up">
             Catasoft Solutions FZCO was registered in Dubai, UAE in January 2019 with a clear mission: to provide world-class industrial engineering software services to the process, power, and marine industries.
@@ -69,24 +59,6 @@ export default function AboutPage() {
           <p className="fade-up" style={{ transitionDelay: '160ms' }}>
             From concept to commissioning, we partner with EPC contractors and owner-operators to deliver projects that are on time, within budget, and built to last. Our commitment to continuous improvement and technology adoption ensures our clients always have access to the most efficient engineering workflows available.
           </p>
-        </div>
-      </section>
-
-      {/* Stats */}
-      <section className="py-16 bg-white">
-        <div className="max-w-5xl mx-auto px-6">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {stats.map((s, i) => (
-              <div
-                key={s.label}
-                className="fade-up border border-border-color rounded-xl p-8 text-center hover:border-primary transition-all duration-300 hover:-translate-y-0.5"
-                style={{ transitionDelay: `${i * 80}ms` }}
-              >
-                <div className="font-urbanist font-bold text-2xl text-primary mb-2">{s.value}</div>
-                <div className="text-text-secondary text-sm">{s.label}</div>
-              </div>
-            ))}
-          </div>
         </div>
       </section>
 
