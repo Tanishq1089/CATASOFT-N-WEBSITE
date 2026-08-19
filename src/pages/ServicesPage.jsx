@@ -4,34 +4,34 @@ import PillBadge from '../components/PillBadge'
 
 const services = [
   {
+    icon: <svg className="w-7 h-7" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>,
+    title: 'IT Solutions',
+    desc: 'Comprehensive IT services and consulting tailored for industrial and engineering enterprises. Our expertise covers software integration, server management, databases, and secure data storage solutions.',
+  },
+  {
     icon: <svg className="w-7 h-7" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" /></svg>,
-    title: 'AVEVA E3D & AIM',
-    desc: 'Our AVEVA E3D services cover the full spectrum of 3D plant design including structural modeling, piping layout, equipment placement, HVAC systems, and cable tray routing. We create clash-free, fully coordinated 3D models that integrate seamlessly with your project data, ensuring accuracy from concept through to construction. Our team leverages AVEVA Information Management (AIM) for centralized data governance and document control.',
+    title: 'Detail Engineering & Design Services',
+    desc: 'End-to-end detail engineering using industry-leading 3D plant design and 2D drafting systems. We deliver complete structural modeling, piping layouts, HVAC layouts, and clash-free designs.',
   },
   {
-    icon: <svg className="w-7 h-7" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M9 17V7m0 10a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h2a2 2 0 012 2m0 10a2 2 0 002 2h2a2 2 0 002-2M9 7a2 2 0 012-2h2a2 2 0 012 2m0 10V7m0 10a2 2 0 002 2h2a2 2 0 002-2V7a2 2 0 00-2-2h-2a2 2 0 00-2 2" /></svg>,
-    title: 'SPPID & SPF (Smart P&ID)',
-    desc: 'We create intelligent, data-driven Process & Instrumentation Diagrams using AVEVA SPPID and Smart PFD. Our diagrams are fully synchronized with 3D models and engineering data registers, ensuring consistency across all project deliverables. From process flow diagrams to detailed P&IDs, we maintain complete data integrity and traceability throughout the project lifecycle.',
-  },
-  {
-    icon: <svg className="w-7 h-7" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.066 2.573c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.573 1.066c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.066-2.573c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" /><path strokeLinecap="round" strokeLinejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /></svg>,
-    title: 'AVEVA Engineering & E&I',
-    desc: 'We manage comprehensive engineering data using AVEVA Engineering and AVEVA Electrical & Instrumentation platforms. Our services include creating and maintaining tag registers, cable schedules, instrument indexes, equipment lists, and signal lists — all with full traceability and audit compliance. We ensure your engineering data is structured, accurate, and accessible across disciplines.',
-  },
-  {
-    icon: <svg className="w-7 h-7" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z" /></svg>,
-    title: '2D Drafting & 3D Modeling',
-    desc: 'Our drafting team produces high-quality layout drawings, piping isometrics, general arrangement drawings, structural details, and as-built documentation. We work in both 2D and 3D environments, delivering precise engineering drawings that meet international standards and client specifications. Every deliverable undergoes rigorous quality checks before submission.',
+    icon: <svg className="w-7 h-7" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 1121.21 8H18.5" /></svg>,
+    title: 'Conversion Services',
+    desc: 'Specialized services for legacy drawing digitization, format conversion, and migration between different design databases. We convert PDF drawings, paper sketches, and 2D layouts into intelligent 3D models.',
   },
   {
     icon: <svg className="w-7 h-7" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" /></svg>,
     title: 'Automation & Customization',
-    desc: 'We develop custom macros, automated workflows, bespoke catalogues, and specialized plugins to accelerate your engineering processes. Whether it is automating repetitive tasks in AVEVA E3D, creating custom report generators, or building tailored tools for your specific workflow, our automation services help your team work faster and with fewer errors.',
+    desc: 'Bespoke software automation, custom macro development, plugin development, and workflow optimizations for AVEVA, MicroStation, and AutoCAD to accelerate design speed and eliminate human error.',
   },
   {
-    icon: <svg className="w-7 h-7" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>,
-    title: 'MicroStation & AutoCAD',
-    desc: 'We provide comprehensive civil layout drafting and mechanical drawing services using Bentley MicroStation and Autodesk AutoCAD. Our deliverables are compatible across global engineering teams and adhere to client-specific CAD standards. From site plans to detailed mechanical assemblies, we ensure consistency and precision in every drawing.',
+    icon: <svg className="w-7 h-7" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" /></svg>,
+    title: 'Animation & Design',
+    desc: 'High-fidelity 3D rendering, walkthrough animations, structural visualizations, and interactive engineering fly-throughs for project presentations, safety reviews, and client approvals.',
+  },
+  {
+    icon: <svg className="w-7 h-7" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-7.824-3.058 12.08 12.08 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" /></svg>,
+    title: 'Training Services',
+    desc: 'Professional, hands-on training courses led by certified engineers for AVEVA E3D, SPPID, MicroStation, and custom macro development to upgrade your engineering team\'s design capabilities.',
   },
 ]
 
@@ -53,26 +53,28 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* Service Rows */}
+      {/* Service Rows - 2 Columns Layout */}
       <section className="pb-20 bg-white">
-        <div className="max-w-5xl mx-auto px-6 space-y-6">
-          {services.map((s, i) => (
-            <div
-              key={s.title}
-              className="fade-up border border-border-color rounded-xl p-8 md:p-10 flex flex-col md:flex-row gap-6 hover:border-primary transition-all duration-300 hover:-translate-y-0.5"
-              style={{ transitionDelay: `${i * 80}ms` }}
-            >
-              <div className="flex-shrink-0">
-                <div className="w-14 h-14 rounded-xl bg-primary flex items-center justify-center text-white">
-                  {s.icon}
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+            {services.map((s, i) => (
+              <div
+                key={s.title}
+                className="fade-up border border-border-color rounded-xl p-8 flex gap-6 hover:border-primary transition-all duration-300 hover:-translate-y-0.5 bg-white"
+                style={{ transitionDelay: `${i * 80}ms` }}
+              >
+                <div className="flex-shrink-0">
+                  <div className="w-14 h-14 rounded-xl bg-primary flex items-center justify-center text-white">
+                    {s.icon}
+                  </div>
+                </div>
+                <div>
+                  <h3 className="font-urbanist font-semibold text-xl text-text-primary mb-3">{s.title}</h3>
+                  <p className="text-text-secondary leading-relaxed text-sm md:text-base">{s.desc}</p>
                 </div>
               </div>
-              <div>
-                <h3 className="font-urbanist font-semibold text-xl text-text-primary mb-3">{s.title}</h3>
-                <p className="text-text-secondary leading-relaxed">{s.desc}</p>
-              </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </section>
 
