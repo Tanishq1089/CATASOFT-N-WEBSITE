@@ -29,7 +29,7 @@ const courses = [
 const steps = [
   { num: '01', title: 'Reach Out', desc: 'Contact us with your training requirements and team size to get started.' },
   { num: '02', title: 'Custom Curriculum', desc: 'We design a tailored curriculum based on your team\'s skill level and project needs.' },
-  { num: '03', title: 'Hands-On Training', desc: 'Your team learns by doing — with real-world exercises and project-based assignments.' },
+  { num: '03', title: 'Hands-On Training', desc: 'Your team learns by doing, with real-world exercises and project-based assignments.' },
 ]
 
 export default function TrainingPage() {
@@ -45,7 +45,7 @@ export default function TrainingPage() {
             Build Real-World Engineering Software Skills
           </h1>
           <p className="text-text-secondary text-base md:text-lg leading-relaxed max-w-2xl mx-auto">
-            Hands-on training programs designed for engineers who build real projects — covering AVEVA, MicroStation, AutoCAD, and automation.
+            Hands-on training programs designed for engineers who build real projects, covering AVEVA, MicroStation, AutoCAD, and automation.
           </p>
         </div>
       </section>

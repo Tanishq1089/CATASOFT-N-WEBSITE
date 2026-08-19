@@ -58,7 +58,7 @@ export default function ContactPage() {
             Let's Talk About Your Project
           </h1>
           <p className="text-text-secondary text-base md:text-lg leading-relaxed max-w-2xl mx-auto">
-            Whether you need engineering software services, training, or automation solutions — we're here to help.
+            Whether you need engineering software services, training, or automation solutions, we're here to help.
           </p>
         </div>
       </section>

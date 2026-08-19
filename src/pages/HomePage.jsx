@@ -105,7 +105,7 @@ export default function HomePage() {
                 showSub ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
               }`}
             >
-              We deliver world-class detail engineering, drafting, and 3D modeling services using AVEVA, MicroStation, and AutoCAD — on time, within budget.
+              We deliver world-class detail engineering, drafting, and 3D modeling services using AVEVA, MicroStation, and AutoCAD, on time, within budget.
             </p>
 
             <div className={`flex flex-wrap justify-center gap-4 transition-all duration-700 delay-200 ${
@@ -211,7 +211,7 @@ export default function HomePage() {
             Build Real-World Engineering Software Skills
           </h2>
           <p className="text-text-secondary text-base md:text-lg leading-relaxed max-w-2xl mx-auto mb-8">
-            Hands-on training programs in AVEVA E3D, SPPID, MicroStation, AutoCAD, and more — designed for engineers who build real projects.
+            Hands-on training programs in AVEVA E3D, SPPID, MicroStation, AutoCAD, and more, designed for engineers who build real projects.
           </p>
           <Link
             to="/training"
