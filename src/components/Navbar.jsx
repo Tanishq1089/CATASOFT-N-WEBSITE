@@ -2,10 +2,10 @@ import { useState, useEffect } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 
 const navLinks = [
-  { to: '/about', label: 'About' },
+  { to: '/about', label: 'About Us' },
   { to: '/services', label: 'Services' },
   { to: '/training', label: 'Training' },
-  { to: '/contact', label: 'Contact' },
+  { to: '/contact', label: 'Contact Us' },
 ]
 
 export default function Navbar() {
@@ -29,10 +29,10 @@ export default function Navbar() {
         visible ? 'visible' : ''
       } ${scrolled ? 'border-b border-border-color shadow-sm' : ''}`}
     >
-      <nav className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+      <nav className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
         {/* Logo */}
         <Link to="/" className="flex items-center">
-          <img src="/catasoft-logo.png" alt="Catasoft Solutions" className="h-9" />
+          <img src="/catasoft-logo.png" alt="Catasoft Solutions" className="h-12 md:h-14" />
         </Link>
 
         {/* Desktop nav */}
@@ -52,16 +52,8 @@ export default function Navbar() {
           ))}
         </div>
 
-        {/* CTA + Hamburger */}
-        <div className="flex items-center gap-4">
-          <Link
-            to="/contact"
-            className="hidden md:inline-flex rotating-border-btn rotating-border-btn-filled items-center px-[26px] py-3 rounded-full bg-primary text-white text-sm font-semibold hover:bg-primary-hover transition-colors duration-200"
-          >
-            Get a Quote
-          </Link>
-
-          {/* Hamburger */}
+        {/* Hamburger */}
+        <div className="flex items-center">
           <button
             onClick={() => setMenuOpen(!menuOpen)}
             className="md:hidden flex flex-col gap-[5px] p-2"
@@ -107,13 +99,6 @@ export default function Navbar() {
               {link.label}
             </NavLink>
           ))}
-          <Link
-            to="/contact"
-            onClick={() => setMenuOpen(false)}
-            className="inline-flex items-center justify-center px-[26px] py-3 rounded-full bg-primary text-white text-sm font-semibold"
-          >
-            Get a Quote
-          </Link>
         </div>
       </div>
     </header>
